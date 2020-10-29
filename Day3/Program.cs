@@ -2,6 +2,16 @@
 
 namespace Day3
 {
+    enum Day
+    {
+        Pirmdiena,
+        Otrdiena,
+        Trešdiena,
+        Ceturtdiena,
+        Piektdiena,
+        Sestdiena,
+        Svētdiena
+    }
     class Program
     {
         static void Task1()
@@ -72,11 +82,14 @@ namespace Day3
         }
         static void Task7()
         {
-
+            string[] array = { "Jānis", "Pēteris", "Andris" };
+            Console.WriteLine(array[1]);
+            array[2] = "Jēkabs";
         }
         static void Task8()
         {
-
+            Day day = Day.Piektdiena;
+            Console.WriteLine(day);
         }
         static void ExtraTask()
         {
