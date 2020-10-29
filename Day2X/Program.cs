@@ -79,7 +79,36 @@ namespace Day2X
         }
         static void ExtraTask()
         {
+            Console.WriteLine("----- Extra Task -----");
+            Console.Write("Ievadi pirmā spēlētāja vārdu: ");
+            string firstPlayer = Console.ReadLine();
+            Console.Write("Ievadi otrā spēlētāja vārdu: ");
+            string secondPlayer = Console.ReadLine();
 
+            Console.WriteLine($"3 reizes ievadi spēlētāja '{firstPlayer}' punktus: ");
+            int playerOnePts = 0;
+            for (int i = 1; i <= 3; i++)
+            {
+                playerOnePts += Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine($"3 reizes ievadi spēlētāja '{secondPlayer}' punktus: ");
+            int playerTwoPts = 0;
+            for (int i = 1; i <= 3; i++)
+            {
+                playerTwoPts += Convert.ToInt32(Console.ReadLine());
+            }
+
+            if (playerOnePts != playerTwoPts)
+            {
+                Console.WriteLine($"Spēlētājs ar visvairāk punktiem: { (playerOnePts > playerTwoPts ? firstPlayer : secondPlayer) }");
+            }
+            else
+            {
+                Console.WriteLine("Abiem spēlētājiem ir vienāds punktu skaits!");
+            }
+
+            Console.WriteLine("------------------");
         }
         static void Main(string[] args)
         {
