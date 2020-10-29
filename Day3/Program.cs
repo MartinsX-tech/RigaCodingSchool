@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Day3
 {
@@ -93,7 +94,20 @@ namespace Day3
         }
         static void ExtraTask()
         {
+            Console.Write("Ievadiet skaitli no 0 līdz 20: ");
+            int input = Convert.ToInt32(Console.ReadLine());
 
+            while (input > 20 || input < 0)
+            {
+                Console.WriteLine("Neatļauts skaitlis!");
+                input = Convert.ToInt32(Console.ReadLine());
+            }
+            int i = 1;
+            while (i <= input)
+            {
+                Console.Write(i * input + " ");
+                i++;
+            }
         }
         static void Main(string[] args)
         {
