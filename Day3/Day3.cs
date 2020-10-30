@@ -13,7 +13,7 @@ namespace Day3
         Sestdiena,
         Svētdiena
     }
-    class Program
+    class Day3
     {
         static void Task1()
         {

@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Day5
 {
-    class Program
+    class Day5
     {
         static void Task1()
         {
