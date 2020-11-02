@@ -10,9 +10,7 @@ namespace Day6
     {
         public static string GetNameSurname()
         {
-            Console.WriteLine("Ievadi savu vārdu un uzvārdu: ");
-            string nameplus = Console.ReadLine();
-            return nameplus;
+            return Console.ReadLine();
         }
         public static void PrintNameSurname(string nameSurname)
         {

@@ -19,8 +19,10 @@ namespace Day6
                 case 3:
                     Task3.PrintNameSurname(Task3.GetNameSurname());
                     break;
-                /*case 4:
-                    Task4();*/
+                case 4:
+                    Console.WriteLine("Ievadiet skaitli n:");
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"Faktoriāls no {n} ir { Task4.Factorial(n)} ");
                     break;
                 default:
                     Console.WriteLine("Such task does not exist!");
