@@ -5,14 +5,6 @@ namespace Day7
 {
     class Day7
     {
-        static void Task4()
-        {
-
-        }
-        static void Task5()
-        {
-
-        }
         static void Task6()
         {
 
@@ -48,10 +40,20 @@ namespace Day7
                     Task3.PrintArrayValues(new string[] { "abc", "def", "ghi" });
                     break;
                 case 4:
-                    Task4();
+                    /*string[] array = {"Jānis", "", "Pēteris", "Antons", "", "Andris"};
+                    Task4.PrintArrayValues(array);
+                    Console.WriteLine("-----");
+                    Task4.GetNonEmptyArray(array);*/
+
+                    string[] nameArray = { "Jānis", "", "Pēteris", "Antons", "", "Andris" };
+                    Task3.PrintArrayValues(nameArray);
+                    nameArray = Task4.GetNonEmptyArray(nameArray);
+                    Task3.PrintArrayValues(nameArray);
                     break;
                 case 5:
-                    Task5();
+                    Task5.CalculateSum(3, 5);
+                    Task5.CalculateSum(111, 969);
+                    Task5.CalculateSum(7, 11);
                     break;
                 case 6:
                     Task6();

@@ -6,7 +6,7 @@ namespace Day7
 {
     class Task3
     {
-        public static void PrintArrayValues(int[] intArray)
+        /*public static void PrintArrayValues(int[] intArray)
         {
             foreach (var item in intArray)
             {
@@ -19,6 +19,23 @@ namespace Day7
             {
                 Console.WriteLine(item.ToString());
             }
+        }*/
+
+        public static void PrintArrayValues(string[] array)
+        {
+            foreach (string item in array)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+        }
+        public static void PrintArrayValues(int[] array)
+        {
+            foreach (int item in array)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
         }
     }
 }
