@@ -51,9 +51,9 @@ namespace Day7
                     Task3.PrintArrayValues(nameArray);
                     break;
                 case 5:
-                    Task5.CalculateSum(3, 5);
-                    Task5.CalculateSum(111, 969);
-                    Task5.CalculateSum(7, 11);
+                    Console.WriteLine(Task5.CalculateSum(3, 5));
+                    Console.WriteLine(Task5.CalculateSum(111, 969));
+                    Console.WriteLine(Task5.CalculateSum(-7, 11));
                     break;
                 case 6:
                     Task6();
