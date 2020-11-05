@@ -19,7 +19,7 @@ namespace Day9
             Car expensiveCar = new Car();
             foreach (Car car in carList)
             {
-                if (car.price > expensiveCar.price)
+                if (car.Price > expensiveCar.Price)
                 {
                     expensiveCar = car;
                 }

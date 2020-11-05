@@ -6,11 +6,11 @@ namespace Day9
 {
     class Car
     {
-        public string make;
-        public string model;
-        public float price;
-        public string color;
-        public int year;
+        public string Make;
+        public string Model;
+        public float Price;
+        public string Color;
+        public int Year;
 
         public Car()
         {
@@ -18,15 +18,15 @@ namespace Day9
         }
         public Car(string make, string model, float price, string color, int year)
         {
-            this.make = make;
-            this.model = model;
-            this.price = price;
-            this.color = color;
-            this.year = year;
+            this.Make = make;
+            this.Model = model;
+            this.Price = price;
+            this.Color = color;
+            this.Year = year;
         }
         public string GetString()
         {
-            return $"{this.make}, {this.model}, {this.price:0.##}, {this.color}, {this.year}";
+            return $"{this.Make}, {this.Model}, {this.Price:0.##}, {this.Color}, {this.Year}";
         }
     }
 }
